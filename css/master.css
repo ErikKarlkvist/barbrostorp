@@ -2,19 +2,14 @@ body{
   background:white;
   font-family: Helvetica;
   margin: 0;
+  text-align: center;
+  padding: 0;
 }
 
 .image {
    position: relative;
    width: 100%; /* for IE 6 */
    margin: 0px;
-}
-
-.imagebackground{
-  background-image: url("torpet.png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 400px;
 }
 
 img{
@@ -29,64 +24,36 @@ a {
   color:white;
 }
 
-h1 {
+h6 {
+  margin: 50px;
+}
+
+
+ul h1 {
    position: absolute;
-   left: 0;
+   left: 0px;
    width: 100%;
-   margin: 0px;
+   min-width: 800px;
+   margin-top: 0px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.9);
    padding: 0px;
+   font-size: 0px;
 }
 
-h6 {
-  margin: 35px;
-}
 
 @media (max-width: 767px) {
 
-  h6 {
-    margin: 70px;
+  .breaker{
+    height: 35px;
   }
 
   ul h1 span li {
      display: inline-block;
      color: white;
-     font: bold 15px/40px Helvetica, Sans-Serif;
+     font: bold 20px/25px  Helvetica, Sans-Serif;
      letter-spacing: 0px;
-     padding: 2px 2px;
-     list-style-type: none:
-     float: left;
-     margin: 0px;
-  }
-
-  h2 {
-     position: absolute;
-     left: 0;
-     top: 0px;
-     margin-top: 5px;
-  }
-
-  h2 span {
-     color: white;
-     font: bold 20px/35px Helvetica, Sans-Serif;
-     letter-spacing: -1px;
-     background: rgb(0, 0, 0); /* fallback color */
-     background: rgba(0, 0, 0, 0.7);
-     padding: 7px;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-  ul h1 span li {
-     display: inline-block;
-     color: white;
-     font: bold 20px/40px Helvetica, Sans-Serif;
-     letter-spacing: 0px;
-     padding: 5px 5px;
-     margin: 0;
+     padding: 5px;
      list-style-type: none:
      float: left;
      margin: 0px;
@@ -96,33 +63,74 @@ h6 {
      position: absolute;
      left: 0;
      top: 0;
-     margin-top: 10px;
+     margin-top: 5px;
   }
 
   h2 span {
      color: white;
-     font: bold 25px/40px Helvetica, Sans-Serif;
+     font: bold 20px/20px Helvetica, Sans-Serif;
+     letter-spacing: -1px;
+     background: rgb(0, 0, 0); /* fallback color */
+     background: rgba(0, 0, 0, 0.7);
+     padding: 5px;
+     margin-top: 15px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .breaker{
+    height: 40px;
+  }
+
+  span li {
+     display: inline-block;
+     color: white;
+     font: bold 25px/30px Helvetica, Sans-Serif;
+     letter-spacing: 0px;
+     padding: 5px 5px;
+     margin: 0;
+     list-style-type: none:
+     float: left;
+     margin-left: 2px;
+  }
+
+  h2 {
+     position: absolute;
+     left: 0;
+     top: 0;
+     margin-top: 15px;
+  }
+
+  h2 span {
+     color: white;
+     font: bold 25px/25px Helvetica, Sans-Serif;
      letter-spacing: -1px;
      background: rgb(0, 0, 0); /* fallback color */
      background: rgba(0, 0, 0, 0.7);
      padding: 10px;
-     margin-top: 10px;
+     margin-top: 15px;
   }
 }
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  .breaker{
+    height: 45px;
+  }
+
   ul h1 span li {
      display: inline-block;
      color: white;
-     font: bold 30px/40px Helvetica, Sans-Serif;
+     font: bold 30px/35px Helvetica, Sans-Serif;
      letter-spacing: 0px;
      padding: 5px 5px;
      margin: 0;
      list-style-type: none:
      float: left;
-     margin: 0px;
+     margin-left: 4px;
   }
 
   h2 {
@@ -145,16 +153,20 @@ h6 {
 
 @media (min-width: 1200px) {
 
+  .breaker{
+    height: 50px;
+  }
+
   ul h1 span li {
      display: inline-block;
      color: white;
-     font: bold 25px/40px Helvetica, Sans-Serif;
+     font: bold 35px/40px Helvetica, Sans-Serif;
      letter-spacing: 0px;
-     padding: 10px 10px;
+     padding: 5px 5px;
      margin: 0;
      list-style-type: none:
      float: left;
-     margin: 0px;
+     margin-left: 6px;
   }
 
   h2 {
